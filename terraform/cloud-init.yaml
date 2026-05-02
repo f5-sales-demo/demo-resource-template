@@ -1,0 +1,14 @@
+#cloud-config
+# TODO: Add your component-specific provisioning here.
+# Use $${VAR_NAME} syntax for templatefile() variables (double $ escapes the interpolation).
+# Example:
+#   write_files:
+#     - path: /opt/my-component/config.env
+#       content: |
+#         TARGET=$${target_fqdn}
+
+package_update: true
+package_upgrade: false
+
+runcmd:
+  - echo "cloud-init complete" > /tmp/cloud-init-done

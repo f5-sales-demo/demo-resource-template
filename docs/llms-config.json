@@ -1,0 +1,16 @@
+{
+  "customSets": [
+    {
+      "label": "Deployment",
+      "description": "Terraform IaC deployment with prerequisites and teardown",
+      "paths": ["02-prerequisites*", "03-deploy*", "07-teardown*"]
+    },
+    {
+      "label": "REPLACE_COMPONENT_LABEL",
+      "description": "REPLACE component-specific documentation description",
+      "paths": ["01-architecture*", "05-verify*", "06-integrate*"]
+    }
+  ],
+  "promote": ["index*", "01-architecture*", "03-deploy*"],
+  "demote": ["07-teardown*"]
+}

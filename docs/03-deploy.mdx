@@ -1,0 +1,53 @@
+---
+title: Deploy
+description: Terraform deployment walkthrough
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## Quick Start
+
+<Steps>
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. Copy the example variables file
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. Edit `terraform.tfvars` with your values
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. Initialize and plan
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. Apply
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## Variables
+
+TODO: Add a variable reference table here.
+
+## Outputs
+
+After apply, Terraform displays key outputs including `public_ip`, `ssh_command`, and `deployer`.

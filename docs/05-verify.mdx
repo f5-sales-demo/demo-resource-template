@@ -1,0 +1,17 @@
+---
+title: Verify
+description: Post-deployment validation
+---
+
+## Check Deployment
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## Health Check
+
+TODO: Add health check instructions.
