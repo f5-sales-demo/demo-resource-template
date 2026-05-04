@@ -60,10 +60,21 @@
       }
     },
     "standard_outputs": [
-      "deployer", "resource_group_name", "resource_group_id",
-      "location", "public_ip", "private_ip", "ssh_command",
-      "vm_name", "vm_id", "nsg_name", "nsg_id",
-      "vnet_name", "subnet_id", "component", "environment"
+      "deployer",
+      "resource_group_name",
+      "resource_group_id",
+      "location",
+      "public_ip",
+      "private_ip",
+      "ssh_command",
+      "vm_name",
+      "vm_id",
+      "nsg_name",
+      "nsg_id",
+      "vnet_name",
+      "subnet_id",
+      "component",
+      "environment"
     ],
     "component_outputs": {},
     "estimated_monthly_cost": "REPLACE e.g. $122",
