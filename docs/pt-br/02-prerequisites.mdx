@@ -1,0 +1,31 @@
+---
+title: Pré-requisitos
+description: Requisitos antes da implantação
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Requisitos do Azure
+
+- Assinatura do Azure com acesso de Colaborador
+- Azure CLI instalado e autenticado (`az login`)
+- Terraform >= 1.5.0
+
+## Chave SSH
+
+Um par de chaves SSH é necessário para acesso à VM:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## Estimativa de Custo
+
+TODO: Atualize com o custo mensal estimado do seu componente.
+
+| Recurso | Custo Mensal Estimado |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| IP Público | ~$4 |
+| **Total** | **REPLACE** |

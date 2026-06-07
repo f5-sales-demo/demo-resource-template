@@ -1,0 +1,20 @@
+---
+title: التحقق
+description: التحقق بعد النشر
+i18n:
+  sourceHash: 8208c5e817e2
+  translator: machine
+---
+
+## التحقق من النشر
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## فحص الحالة الصحية
+
+TODO: إضافة تعليمات فحص الحالة الصحية.

@@ -1,0 +1,56 @@
+---
+title: Deploy
+description: Terraform 배포 가이드
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## 빠른 시작
+
+<Steps>
+
+1. 리포지토리 클론
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. 예제 변수 파일 복사
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. `terraform.tfvars`를 사용자 환경에 맞게 편집
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. 초기화 및 계획 확인
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. 적용
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## 변수
+
+TODO: 여기에 변수 참조 테이블을 추가하세요.
+
+## 출력
+
+적용 후 Terraform은 `public_ip`, `ssh_command`, `deployer`를 포함한 주요 출력값을 표시합니다.

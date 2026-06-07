@@ -1,0 +1,56 @@
+---
+title: Deploy
+description: Terraform デプロイメント ウォークスルー
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## クイックスタート
+
+<Steps>
+
+1. リポジトリをクローンする
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. サンプル変数ファイルをコピーする
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. `terraform.tfvars` を自分の値で編集する
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. 初期化とプランを実行する
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. 適用する
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## 変数
+
+TODO: ここに変数リファレンステーブルを追加してください。
+
+## 出力
+
+適用後、Terraform は `public_ip`、`ssh_command`、`deployer` を含む主要な出力を表示します。

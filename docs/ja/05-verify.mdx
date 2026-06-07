@@ -1,0 +1,20 @@
+---
+title: 検証
+description: デプロイ後の確認
+i18n:
+  sourceHash: 8208c5e817e2
+  translator: machine
+---
+
+## デプロイの確認
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## ヘルスチェック
+
+TODO: ヘルスチェックの手順を追加してください。

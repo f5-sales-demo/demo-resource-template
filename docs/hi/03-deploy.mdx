@@ -1,0 +1,56 @@
+---
+title: Deploy
+description: Terraform डिप्लॉयमेंट वॉकथ्रू
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## त्वरित प्रारंभ
+
+<Steps>
+
+1. रिपॉजिटरी क्लोन करें
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. उदाहरण वेरिएबल्स फ़ाइल कॉपी करें
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. `terraform.tfvars` को अपने मानों के साथ संपादित करें
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. इनिशियलाइज़ और प्लान करें
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. अप्लाई करें
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## वेरिएबल्स
+
+TODO: यहाँ एक वेरिएबल संदर्भ तालिका जोड़ें।
+
+## आउटपुट
+
+अप्लाई के बाद, Terraform प्रमुख आउटपुट प्रदर्शित करता है जिसमें `public_ip`, `ssh_command`, और `deployer` शामिल हैं।

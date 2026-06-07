@@ -1,0 +1,31 @@
+---
+title: 사전 요구 사항
+description: 배포 전 요구 사항
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Azure 요구 사항
+
+- Contributor 접근 권한이 있는 Azure 구독
+- Azure CLI 설치 및 인증 완료 (`az login`)
+- Terraform >= 1.5.0
+
+## SSH 키
+
+VM 접근을 위해 SSH 키 쌍이 필요합니다:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## 비용 추정
+
+TODO: 컴포넌트의 예상 월간 비용으로 업데이트하세요.
+
+| 리소스 | 예상 월간 비용 |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| 공용 IP | ~$4 |
+| **합계** | **REPLACE** |
