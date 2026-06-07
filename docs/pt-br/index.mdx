@@ -1,0 +1,27 @@
+---
+title: REPLACE Component Name
+description: REPLACE one-line description
+template: splash
+hero:
+  tagline: REPLACE tagline
+  actions:
+    - text: Get Started
+      link: ./01-architecture/
+      icon: right-arrow
+      variant: primary
+    - text: Deploy Now
+      link: ./03-deploy/
+      icon: rocket
+i18n:
+  sourceHash: 9867b8d208d0
+  translator: machine
+---
+
+import { CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+<CardGrid>
+  <LinkCard title="Arquitetura" href="./01-architecture/" description="Design do sistema e componentes" />
+  <LinkCard title="Implantação" href="./03-deploy/" description="Passo a passo da implantação com Terraform" />
+  <LinkCard title="Verificação" href="./05-verify/" description="Validação pós-implantação" />
+  <LinkCard title="Encerramento" href="./07-teardown/" description="Limpeza de recursos" />
+</CardGrid>

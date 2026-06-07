@@ -1,0 +1,20 @@
+---
+title: 验证
+description: 部署后验证
+i18n:
+  sourceHash: 8208c5e817e2
+  translator: machine
+---
+
+## 检查部署
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## 健康检查
+
+TODO: 添加健康检查说明。

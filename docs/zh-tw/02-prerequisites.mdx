@@ -1,0 +1,31 @@
+---
+title: 先決條件
+description: 部署前的需求
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Azure 需求
+
+- 具有 Contributor 存取權限的 Azure 訂閱
+- 已安裝並完成驗證的 Azure CLI（`az login`）
+- Terraform >= 1.5.0
+
+## SSH 金鑰
+
+存取虛擬機器需要 SSH 金鑰對：
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## 費用估算
+
+TODO: 請更新為您元件的預估每月費用。
+
+| 資源 | 預估每月費用 |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| 公用 IP | ~$4 |
+| **總計** | **REPLACE** |

@@ -1,0 +1,56 @@
+---
+title: Deploy
+description: คำแนะนำการ deploy ด้วย Terraform
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## เริ่มต้นอย่างรวดเร็ว
+
+<Steps>
+
+1. โคลน repository
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. คัดลอกไฟล์ตัวอย่างตัวแปร
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. แก้ไข `terraform.tfvars` ด้วยค่าของคุณ
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. เริ่มต้นและวางแผน
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. นำไปใช้
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## ตัวแปร
+
+TODO: เพิ่มตารางอ้างอิงตัวแปรที่นี่
+
+## ผลลัพธ์
+
+หลังจาก apply แล้ว Terraform จะแสดงผลลัพธ์สำคัญ ได้แก่ `public_ip`, `ssh_command` และ `deployer`

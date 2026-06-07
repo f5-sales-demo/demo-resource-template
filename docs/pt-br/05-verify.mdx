@@ -1,0 +1,20 @@
+---
+title: Verificar
+description: Validação pós-implantação
+i18n:
+  sourceHash: 8208c5e817e2
+  translator: machine
+---
+
+## Verificar a Implantação
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## Verificação de Saúde
+
+TODO: Adicionar instruções de verificação de saúde.

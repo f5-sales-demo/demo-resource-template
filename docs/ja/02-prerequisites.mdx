@@ -1,0 +1,31 @@
+---
+title: 前提条件
+description: デプロイ前の要件
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Azure の要件
+
+- Contributor アクセス権を持つ Azure サブスクリプション
+- Azure CLI がインストールされ、認証済みであること（`az login`）
+- Terraform >= 1.5.0
+
+## SSH キー
+
+VM へのアクセスには SSH キーペアが必要です：
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## コスト見積もり
+
+TODO: コンポーネントの推定月額コストを更新してください。
+
+| リソース | 推定月額コスト |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| パブリック IP | ~$4 |
+| **合計** | **REPLACE** |

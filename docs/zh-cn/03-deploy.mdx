@@ -1,0 +1,56 @@
+---
+title: 部署
+description: Terraform 部署操作指南
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## 快速开始
+
+<Steps>
+
+1. 克隆仓库
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. 复制示例变量文件
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. 使用您的值编辑 `terraform.tfvars`
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. 初始化并预览
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. 应用
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## 变量
+
+TODO: 在此处添加变量参考表。
+
+## 输出
+
+应用完成后，Terraform 会显示关键输出，包括 `public_ip`、`ssh_command` 和 `deployer`。

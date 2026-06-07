@@ -1,0 +1,31 @@
+---
+title: المتطلبات الأساسية
+description: المتطلبات قبل النشر
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## متطلبات Azure
+
+- اشتراك Azure مع صلاحية Contributor
+- تثبيت Azure CLI والمصادقة عليه (`az login`)
+- Terraform >= 1.5.0
+
+## مفتاح SSH
+
+يلزم وجود زوج مفاتيح SSH للوصول إلى الجهاز الافتراضي:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## تقدير التكلفة
+
+TODO: قم بالتحديث بالتكلفة الشهرية المقدرة لمكونك.
+
+| المورد | التكلفة الشهرية المقدرة |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| عنوان IP عام | ~$4 |
+| **الإجمالي** | **REPLACE** |

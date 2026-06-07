@@ -1,0 +1,31 @@
+---
+title: 前提条件
+description: 部署前的要求
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Azure 要求
+
+- 具有参与者访问权限的 Azure 订阅
+- 已安装并完成身份验证的 Azure CLI（`az login`）
+- Terraform >= 1.5.0
+
+## SSH 密钥
+
+访问虚拟机需要 SSH 密钥对：
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## 费用估算
+
+TODO: 请更新为您组件的预估月度费用。
+
+| 资源 | 预估月度费用 |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| 公共 IP | ~$4 |
+| **总计** | **REPLACE** |

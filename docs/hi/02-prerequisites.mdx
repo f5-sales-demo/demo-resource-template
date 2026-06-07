@@ -1,0 +1,31 @@
+---
+title: पूर्वापेक्षाएँ
+description: तैनाती से पहले की आवश्यकताएँ
+i18n:
+  sourceHash: ac7d520b3f46
+  translator: machine
+---
+
+## Azure आवश्यकताएँ
+
+- Contributor एक्सेस के साथ Azure सब्सक्रिप्शन
+- Azure CLI इंस्टॉल और प्रमाणित (`az login`)
+- Terraform >= 1.5.0
+
+## SSH कुंजी
+
+VM एक्सेस के लिए SSH कुंजी जोड़ी आवश्यक है:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+```
+
+## लागत अनुमान
+
+TODO: अपने कंपोनेंट की अनुमानित मासिक लागत के साथ अपडेट करें।
+
+| संसाधन | अनुमानित मासिक लागत |
+|---|---|
+| VM (REPLACE_SIZE) | REPLACE |
+| Public IP | ~$4 |
+| **कुल** | **REPLACE** |

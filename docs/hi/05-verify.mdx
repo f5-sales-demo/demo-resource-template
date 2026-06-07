@@ -1,0 +1,20 @@
+---
+title: सत्यापन
+description: तैनाती के बाद का सत्यापन
+i18n:
+  sourceHash: 8208c5e817e2
+  translator: machine
+---
+
+## तैनाती की जाँच करें
+
+```bash
+# SSH to the VM
+ssh azureuser@$(terraform -chdir=terraform output -raw public_ip)
+
+# TODO: Add component-specific verification steps
+```
+
+## स्वास्थ्य जाँच
+
+TODO: स्वास्थ्य जाँच के निर्देश जोड़ें।

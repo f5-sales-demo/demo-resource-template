@@ -1,0 +1,56 @@
+---
+title: النشر
+description: شرح تفصيلي لعملية النشر باستخدام Terraform
+i18n:
+  sourceHash: 8a082ae58970
+  translator: machine
+---
+
+import { Steps } from "@astrojs/starlight/components";
+
+## البدء السريع
+
+<Steps>
+
+1. استنساخ المستودع
+
+   ```bash
+   git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
+   cd REPLACE_REPO_NAME/terraform
+   ```
+
+2. نسخ ملف المتغيرات النموذجي
+
+   ```bash
+   cp terraform.tfvars.example terraform.tfvars
+   ```
+
+3. تعديل `terraform.tfvars` بالقيم الخاصة بك
+
+   ```hcl
+   subscription_id = "your-azure-subscription-id"
+   # TODO: Add component-specific required variables
+   ```
+
+4. التهيئة والتخطيط
+
+   ```bash
+   terraform init
+   terraform plan
+   ```
+
+5. التطبيق
+
+   ```bash
+   terraform apply
+   ```
+
+</Steps>
+
+## المتغيرات
+
+TODO: أضف جدول مرجعي للمتغيرات هنا.
+
+## المخرجات
+
+بعد التطبيق، يعرض Terraform المخرجات الرئيسية بما في ذلك `public_ip` و `ssh_command` و `deployer`.
