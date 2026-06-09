@@ -1,6 +1,6 @@
 ---
-title: Deploy
-description: Terraform 배포 가이드
+title: 배포
+description: Terraform 배포 안내
 i18n:
   sourceHash: 8a082ae58970
   translator: machine
@@ -25,14 +25,14 @@ import { Steps } from "@astrojs/starlight/components";
    cp terraform.tfvars.example terraform.tfvars
    ```
 
-3. `terraform.tfvars`를 사용자 환경에 맞게 편집
+3. `terraform.tfvars`를 본인의 값으로 편집
 
    ```hcl
    subscription_id = "your-azure-subscription-id"
    # TODO: Add component-specific required variables
    ```
 
-4. 초기화 및 계획 확인
+4. 초기화 및 계획 수립
 
    ```bash
    terraform init
@@ -51,6 +51,6 @@ import { Steps } from "@astrojs/starlight/components";
 
 TODO: 여기에 변수 참조 테이블을 추가하세요.
 
-## 출력
+## 출력값
 
-적용 후 Terraform은 `public_ip`, `ssh_command`, `deployer`를 포함한 주요 출력값을 표시합니다.
+적용 후, Terraform은 `public_ip`, `ssh_command`, `deployer`를 포함한 주요 출력값을 표시합니다.
