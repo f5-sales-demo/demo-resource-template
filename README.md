@@ -1,24 +1,15 @@
-# REPLACE Component Name
+# Demo Resource Template
 
-REPLACE one-line description.
+[![GitHub Pages Deploy](https://github.com/f5xc-salesdemos/demo-resource-template/actions/workflows/github-pages-deploy.yml/badge.svg)](https://github.com/f5xc-salesdemos/demo-resource-template/actions/workflows/github-pages-deploy.yml)
+[![Repository Settings](https://github.com/f5xc-salesdemos/demo-resource-template/actions/workflows/enforce-repo-settings.yml/badge.svg)](https://github.com/f5xc-salesdemos/demo-resource-template/actions/workflows/enforce-repo-settings.yml)
+[![License](https://img.shields.io/github/license/f5xc-salesdemos/demo-resource-template)](LICENSE)
+
+Template repository for f5xc-salesdemos demo resources following the Demo Resource Standard
+
 
 ## Documentation
 
-Full documentation is available at **https://f5xc-salesdemos.github.io/REPLACE_REPO_NAME/**.
-
-## Getting Started
-
-```bash
-git clone https://github.com/f5xc-salesdemos/REPLACE_REPO_NAME.git
-```
-
-See the [documentation](https://f5xc-salesdemos.github.io/REPLACE_REPO_NAME/) for detailed setup
-and usage guides.
-
-## Terraform Reference
-
-<!-- BEGIN_TF_DOCS -->
-<!-- END_TF_DOCS -->
+Full documentation is available at **[https://f5xc-salesdemos.github.io/demo-resource-template/](https://f5xc-salesdemos.github.io/demo-resource-template/)**.
 
 ## Contributing
 

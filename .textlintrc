@@ -13,7 +13,7 @@
         "Markdown",
         "Git",
         "API",
-        "API['\u2019]?s",
+        "API['’]?s",
         "HTML",
         "SSH",
         "JSON",
@@ -21,7 +21,7 @@
         "SQLite",
         "Unicode",
         "ID",
-        "id['\u2019]?s",
+        "id['’]?s",
         "check[- ]box(es)?",
         "key[/ ]?value",
         "CLI tool(s)?",
@@ -36,7 +36,16 @@
         "file-?type(s)?",
         "lock[- ]file(s)?",
         "re[- ]export(s|ing|ed)?",
-        "copy[- ]past(e|ed|ing)?"
+        "copy[- ]past(e|ed|ing)?",
+        "CDN",
+        "ClickHouse",
+        "(?<=(?:\\w+[^.?!])? )base64\\b",
+        "(?<=(?:\\w+[^.?!])? )internet\\b(?! explorer)",
+        "code[- ]base(es)?",
+        "client ?side",
+        "server ?side",
+        "sub[- ]class((?:es|ing)?)",
+        "user[- ]name(s)?"
       ]
     }
   }
