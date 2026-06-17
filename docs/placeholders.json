@@ -1,10 +1,10 @@
 {
   "REPLACE_COMPONENT_NAME": {
-    "description": "The component name (lowercase, hyphenated, e.g. my-component)",
-    "example": "my-component"
+    "description": "The component name (lowercase, hyphenated, e.g. example-component)",
+    "example": "example-component"
   },
   "REPLACE_REPO_NAME": {
     "description": "The GitHub repository name",
-    "example": "my-component"
+    "example": "example-component"
   }
 }

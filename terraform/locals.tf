@@ -1,5 +1,5 @@
 locals {
-  # TODO: Set this to your component name (e.g., "my-component")
+  # TODO: Set this to your component name (e.g., "example-component")
   component = "REPLACE_COMPONENT_NAME"
 
   # --- Deployer resolution (4-tier fallback) ---
