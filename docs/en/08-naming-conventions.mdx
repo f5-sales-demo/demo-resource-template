@@ -1,0 +1,45 @@
+---
+title: Naming Conventions
+description: The example- prefix standard for sample resources
+---
+
+## Sample resource names
+
+Sample and demo resource **names** use the `example-` prefix in kebab-case.
+This keeps documentation, API specs, code samples, and generated configs
+consistent across the ecosystem.
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+Use `example-` — not `my-`, `test-`, `foo-`, `demo-`, `sample-`, or
+company-like placeholders such as `mycompany` — for any sample resource
+name. This applies to:
+
+- resource `name` fields in examples,
+- `example:` values in workflow and parameter specs,
+- OpenAPI example values,
+- sample Terraform (`.tf`) files.
+
+## What this does not cover
+
+The convention applies to sample **resource names** only. Leave the
+following unchanged:
+
+- attribute and field names (for example `test_key`),
+- real test code and `test/` directories,
+- package and dependency names,
+- example domains and emails, which already follow the convention
+  (`app.example.com`, `user@example.com`).
+
+## Examples
+
+| Instead of | Use |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |

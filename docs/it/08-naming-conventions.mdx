@@ -1,0 +1,48 @@
+---
+title: Convenzioni di denominazione
+description: Lo standard del prefisso example- per le risorse di esempio
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## Nomi delle risorse di esempio
+
+I **nomi** delle risorse di esempio e demo utilizzano il prefisso `example-` in kebab-case.
+Questo mantiene la documentazione, le specifiche API, i campioni di codice e le configurazioni generate
+coerenti in tutto l'ecosistema.
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+Utilizzare `example-` — non `my-`, `test-`, `foo-`, `demo-`, `sample-`, o
+segnaposto simili a nomi aziendali come `mycompany` — per qualsiasi nome di risorsa
+di esempio. Questo si applica a:
+
+- campi `name` delle risorse negli esempi,
+- valori `example:` nelle specifiche di workflow e parametri,
+- valori di esempio OpenAPI,
+- file Terraform di esempio (`.tf`).
+
+## Cosa non è coperto da questa convenzione
+
+La convenzione si applica esclusivamente ai **nomi delle risorse** di esempio. Lasciare
+invariati i seguenti elementi:
+
+- nomi di attributi e campi (ad esempio `test_key`),
+- codice di test reale e directory `test/`,
+- nomi di pacchetti e dipendenze,
+- domini ed email di esempio, che seguono già la convenzione
+  (`app.example.com`, `user@example.com`).
+
+## Esempi
+
+| Invece di | Utilizzare |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |

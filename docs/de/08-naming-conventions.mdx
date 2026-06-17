@@ -1,0 +1,47 @@
+---
+title: Namenskonventionen
+description: Der example- Präfix-Standard für Beispielressourcen
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## Namen von Beispielressourcen
+
+Beispiel- und Demo-Ressourcen **Namen** verwenden das Präfix `example-` im Kebab-Case-Format.
+Dies sorgt für Konsistenz in der gesamten Dokumentation, den API-Spezifikationen, Codebeispielen und generierten Konfigurationen
+im gesamten Ökosystem.
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+Verwenden Sie `example-` — nicht `my-`, `test-`, `foo-`, `demo-`, `sample-` oder
+firmenähnliche Platzhalter wie `mycompany` — für jeden Beispielressourcennamen. Dies gilt für:
+
+- `name`-Felder von Ressourcen in Beispielen,
+- `example:`-Werte in Workflow- und Parameterspezifikationen,
+- OpenAPI-Beispielwerte,
+- Beispieldateien für Terraform (`.tf`).
+
+## Was diese Konvention nicht abdeckt
+
+Die Konvention gilt ausschließlich für **Namen von Beispielressourcen**. Folgendes bleibt
+unverändert:
+
+- Attribut- und Feldnamen (zum Beispiel `test_key`),
+- echter Testcode und `test/`-Verzeichnisse,
+- Paket- und Abhängigkeitsnamen,
+- Beispiel-Domains und E-Mail-Adressen, die bereits der Konvention folgen
+  (`app.example.com`, `user@example.com`).
+
+## Beispiele
+
+| Statt | Verwenden Sie |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |

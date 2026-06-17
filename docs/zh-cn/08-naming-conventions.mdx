@@ -1,0 +1,45 @@
+---
+title: 命名规范
+description: 示例资源的 example- 前缀标准
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## 示例资源名称
+
+示例和演示资源的**名称**在 kebab-case 格式中使用 `example-` 前缀。
+这使文档、API 规范、代码示例和生成的配置在整个生态系统中保持一致。
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+对于任何示例资源名称，请使用 `example-`，而非 `my-`、`test-`、`foo-`、`demo-`、`sample-` 或
+类似公司名称的占位符（如 `mycompany`）。此规范适用于：
+
+- 示例中资源的 `name` 字段，
+- 工作流和参数规范中的 `example:` 值，
+- OpenAPI 示例值，
+- 示例 Terraform（`.tf`）文件。
+
+## 不适用范围
+
+此规范仅适用于示例**资源名称**。以下内容不受影响：
+
+- 属性和字段名称（例如 `test_key`），
+- 真实测试代码和 `test/` 目录，
+- 包和依赖项名称，
+- 示例域名和电子邮件地址，这些已遵循相应规范
+  （`app.example.com`、`user@example.com`）。
+
+## 示例
+
+| 替换前 | 替换后 |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |

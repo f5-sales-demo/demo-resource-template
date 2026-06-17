@@ -1,0 +1,47 @@
+---
+title: 命名規則
+description: サンプルリソースにおける example- プレフィックスの標準
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## サンプルリソース名
+
+サンプルおよびデモリソースの**名前**には、ケバブケースで `example-` プレフィックスを使用します。
+これにより、ドキュメント、API 仕様、コードサンプル、および生成された設定ファイルが
+エコシステム全体で統一されます。
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+サンプルリソース名には、`my-`、`test-`、`foo-`、`demo-`、`sample-`、または
+`mycompany` のような会社名を模したプレースホルダーではなく、`example-` を使用してください。これは以下に適用されます:
+
+- 例における `name` フィールドのリソース名、
+- ワークフローおよびパラメーター仕様内の `example:` 値、
+- OpenAPI のサンプル値、
+- サンプルの Terraform（`.tf`）ファイル。
+
+## 対象外の項目
+
+この規則はサンプルの**リソース名**にのみ適用されます。以下の項目は
+変更しないでください:
+
+- 属性およびフィールド名（例: `test_key`）、
+- 実際のテストコードおよび `test/` ディレクトリ、
+- パッケージおよび依存関係の名前、
+- 例示用のドメインやメールアドレス（これらはすでに規則に従っています:
+  `app.example.com`、`user@example.com`）。
+
+## 使用例
+
+| 使用しない例 | 使用する例 |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |

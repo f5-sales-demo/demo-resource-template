@@ -1,0 +1,48 @@
+---
+title: Convenções de Nomenclatura
+description: O padrão de prefixo example- para recursos de exemplo
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## Nomes de recursos de exemplo
+
+Os **nomes** de recursos de exemplo e demonstração utilizam o prefixo `example-` em kebab-case.
+Isso mantém a documentação, especificações de API, amostras de código e configurações geradas
+consistentes em todo o ecossistema.
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+Utilize `example-` — e não `my-`, `test-`, `foo-`, `demo-`, `sample-` ou
+substitutos semelhantes a nomes de empresas como `mycompany` — para qualquer nome
+de recurso de exemplo. Isso se aplica a:
+
+- campos `name` de recursos em exemplos,
+- valores `example:` em especificações de fluxo de trabalho e parâmetros,
+- valores de exemplo do OpenAPI,
+- arquivos Terraform (`.tf`) de exemplo.
+
+## O que não está coberto por esta convenção
+
+A convenção se aplica apenas a **nomes de recursos** de exemplo. Mantenha os
+seguintes itens sem alteração:
+
+- nomes de atributos e campos (por exemplo, `test_key`),
+- código de teste real e diretórios `test/`,
+- nomes de pacotes e dependências,
+- domínios e e-mails de exemplo, que já seguem a convenção
+  (`app.example.com`, `user@example.com`).
+
+## Exemplos
+
+| Em vez de | Utilize |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |
