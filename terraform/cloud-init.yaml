@@ -3,7 +3,7 @@
 # Use $${VAR_NAME} syntax for templatefile() variables (double $ escapes the interpolation).
 # Example:
 #   write_files:
-#     - path: /opt/my-component/config.env
+#     - path: /opt/example-component/config.env
 #       content: |
 #         TARGET=$${target_fqdn}
 
