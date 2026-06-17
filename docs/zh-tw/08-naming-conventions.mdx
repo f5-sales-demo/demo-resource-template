@@ -1,0 +1,46 @@
+---
+title: 命名慣例
+description: 範例資源的 example- 前綴標準
+i18n:
+  sourceHash: 001ec66ba5a0
+  translator: machine
+---
+
+## 範例資源名稱
+
+範例與示範資源的**名稱**使用 kebab-case 格式的 `example-` 前綴。
+這使文件、API 規格、程式碼範例及生成的設定檔
+在整個生態系中保持一致。
+
+```yaml
+metadata:
+  name: example-http-lb
+  namespace: example-namespace
+```
+
+任何範例資源名稱請使用 `example-`，而非 `my-`、`test-`、`foo-`、`demo-`、`sample-`，
+或類似公司名稱的佔位符（如 `mycompany`）。此規則適用於：
+
+- 範例中資源的 `name` 欄位，
+- 工作流程與參數規格中的 `example:` 值，
+- OpenAPI 範例值，
+- 範例 Terraform（`.tf`）檔案。
+
+## 不涵蓋的範圍
+
+此慣例僅適用於範例**資源名稱**。以下項目請保持不變：
+
+- 屬性與欄位名稱（例如 `test_key`），
+- 實際的測試程式碼與 `test/` 目錄，
+- 套件與相依套件名稱，
+- 範例網域與電子郵件地址，這些已遵循既有慣例
+  （`app.example.com`、`user@example.com`）。
+
+## 範例
+
+| 不要使用 | 請改用 |
+| ---------- | --- |
+| `my-origin-pool` | `example-origin-pool` |
+| `test-namespace` | `example-namespace` |
+| `demo-app` | `example-app` |
+| `mycompany` | `example-company` |
