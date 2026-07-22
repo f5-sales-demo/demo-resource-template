@@ -18,7 +18,7 @@
 [![Repository Settings](https://github.com/f5-sales-demo/demo-resource-template/actions/workflows/enforce-repo-settings.yml/badge.svg)](https://github.com/f5-sales-demo/demo-resource-template/actions/workflows/enforce-repo-settings.yml)
 [![License](https://img.shields.io/github/license/f5-sales-demo/demo-resource-template)](LICENSE)
 
-Template repository for f5-sales-demo demo resources following the Demo Resource Standard
+Template repository for f5xc-salesdemos demo resources following the Demo Resource Standard
 
 
 ## Documentation
