@@ -20,7 +20,6 @@
 
 Template repository for f5-sales-demo demo resources following the Demo Resource Standard
 
-
 ## Documentation
 
 Full documentation is available at **[https://f5-sales-demo.github.io/demo-resource-template/](https://f5-sales-demo.github.io/demo-resource-template/)**.
