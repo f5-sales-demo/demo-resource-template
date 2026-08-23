@@ -32,5 +32,3 @@ branch naming, and CI requirements.
 ## License
 
 See [LICENSE](LICENSE).
-
-<!-- linked-issue verification: #428 -->
