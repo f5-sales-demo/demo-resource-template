@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "fields": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME"],
+  "fields": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME", "XCSH_AZURE_SUBSCRIPTION_ID"],
   "groups": [
     {
       "label": "Settings",
-      "keys": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME"]
+      "keys": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME", "XCSH_AZURE_SUBSCRIPTION_ID"]
     }
   ]
 }
