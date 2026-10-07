@@ -11,10 +11,14 @@ import { Steps } from "@astrojs/starlight/components";
 
 1. Clone the repository
 
+   <div data-xcsh-context="shell" data-xcsh-fields="XCSH_REPO_NAME">
+
    ```bash
-   git clone https://github.com/f5-sales-demo/REPLACE_REPO_NAME.git
-   cd REPLACE_REPO_NAME/terraform
+   git clone https://github.com/f5-sales-demo/<XCSH_REPO_NAME>.git
+   cd <XCSH_REPO_NAME>/terraform
    ```
+
+   </div>
 
 2. Copy the example variables file
 
@@ -25,7 +29,7 @@ import { Steps } from "@astrojs/starlight/components";
 3. Edit `terraform.tfvars` with your values
 
    ```hcl
-   subscription_id = "your-azure-subscription-id"
+   subscription_id = "<XCSH_AZURE_SUBSCRIPTION_ID>"
    # TODO: Add component-specific required variables
    ```
 

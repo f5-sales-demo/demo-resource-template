@@ -1,10 +1,10 @@
 {
-  "REPLACE_COMPONENT_NAME": {
-    "description": "The component name (lowercase, hyphenated, e.g. example-component)",
-    "example": "example-component"
-  },
-  "REPLACE_REPO_NAME": {
-    "description": "The GitHub repository name",
-    "example": "example-component"
-  }
+  "version": 2,
+  "fields": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME"],
+  "groups": [
+    {
+      "label": "Settings",
+      "keys": ["XCSH_COMPONENT_NAME", "XCSH_REPO_NAME"]
+    }
+  ]
 }
